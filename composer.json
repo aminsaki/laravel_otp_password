@@ -1,8 +1,8 @@
 {
-    "name": "userauth/laravel-mobile-auth",
+    "name": "userauth/laravel-mobile-otp-auth",
     "description": "simple mobile authentication for laravel framework",
     "keywords": [
-        "laravel mobile auth"
+        "laravel mobile and otp auth"
     ],
     "homepages": "https://github.com/",
     "license": "MIT",
