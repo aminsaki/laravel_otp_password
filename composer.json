@@ -1,0 +1,51 @@
+{
+    "name": "userAuth/laravel-mobile-auth",
+    "description": "simple mobile authentication for laravel framework",
+    "keywords": [
+        "laravel mobile auth"
+    ],
+    "homepages": "https://github.com/",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "amin",
+            "email": "aminsaki69@gmail.com",
+            "role": "company"
+        }
+    ],
+    "require": {
+        "php": ">=7.2",
+        "illuminate/support": ">=6",
+        "doctrine/dbal": "2.*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^8"
+    },
+    "auttoload": {
+        "psr-4": {
+            "UserAuth\\laravel-mobile-auth\\": "src"
+        }
+    },
+    "auttoload-dev": {
+        "UserAuth\\laravel-mobile-auth\\": "tests"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "text-coverage": "vendor/bin/phpunit --coverage-html coverage"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "UserAuth\\laravelMobileAuth\\ServiceProvider\\LaravelMobileAuthServiceProvider",
+              "LaravelMobileAuthRouteServiceProvider"
+            ],
+            "aliases": {
+                "LaravelMobileAuth": "\\UserAuth\\laravelMobileAuth\\Facade\\LaravelMobileAuthFacade"
+
+            }
+        }
+    }
+}
